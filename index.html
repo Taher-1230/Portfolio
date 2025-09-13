@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Taher Sadabar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch-input">
+        <label for="theme-switch" class="theme-switch-label">
+            <span class="theme-switch-inner"></span>
+            <span class="theme-switch-switch"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-brand">
+            <h1 class="logo">Portfolio</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Taher Sadabar</span>
+                    <span class="title-line">Software Enginner</span>
+                </h1>
+                <p class="hero-subtitle">Creating amazing digital experiences with modern technologies and creative animations.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">View My Work</button>
+                    <button class="btn btn-secondary">Download CV</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image-wrapper">
+                        <img src="assets/profile.jpg" alt="Taher - Profile Picture" class="profile-image">
+                        <div class="profile-ring"></div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <!-- Keep tech orbit as decorative background -->
+                    <div class="tech-orbit-bg">
+                        <div class="orbit-path orbit-1">
+                            <div class="orbit-item">⚛️</div>
+                        </div>
+                        <div class="orbit-path orbit-2">
+                            <div class="orbit-item">🔥</div>
+                        </div>
+                        <div class="orbit-path orbit-3">
+                            <div class="orbit-item">⚡</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer with a love for creating</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-image-container">
+                        <img src="assets/profile.jpg" alt="Your Name" class="about-profile-image">
+                    </div>
+                    <p>Passionate Full-Stack Developer & Software Engineer | Graduating Student @ Nirma University 🎓
+                      I specialize in building dynamic, responsive, and scalable web applications. I love turning ideas into reality through clean code and creating seamless user experiences. Always eager to learn, innovate, and contribute to impactful projects.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">3</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">2</span>
+                            <span class="stat-label">College Year</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">10</span>
+                            <span class="stat-label">Certificate/Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="editor-content">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">developer</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-bracket">{</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-property">name:</span>
+                                <span class="code-string">"Taher Sadabar"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="code-property">skills:</span>
+                                <span class="code-bracket">[</span><span class="code-string">"html"</span>, <span class="code-string">"CSS/Bootstrap"</span></span><span class="code-string">"JavaScript"</span>, <span class="code-string">"C/C++"</span><span class="code-bracket">]</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with React and Node.js</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A beautiful weather dashboard with animated charts and forecasts</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS/SCSS/Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data structures</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="56"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:taher.sadabar19@gmail.com?subject=Portfolio Contact&body=Hi Taher,%0D%0A%0D%0AI found your portfolio and would like to get in touch.%0D%0A%0D%0A" class="email-link">taher.sadabar19@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+916354481810</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Ahmedabad, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                    </form>
+                    <!-- Status messages -->
+                    <div id="form-status" class="form-status" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px; text-align: center;"></div>
+                    <!-- Mailto backup option -->
+                    <div class="mailto-backup" style="text-align: center; margin-top: 15px; padding: 10px; border-top: 1px solid var(--border-color, #e5e7eb);">
+                        <p style="margin: 0; font-size: 0.9em; color: var(--text-secondary, #6b7280);">Or send me an email directly:</p>
+                        <a href="mailto:taher.sadabar19@gmail.com?subject=Portfolio Contact - Hello Taher&body=Hi Taher,%0D%0A%0D%0AI found your portfolio website and would like to get in touch with you.%0D%0A%0D%0AName: %0D%0AEmail: %0D%0A%0D%0AMessage:%0D%0A%0D%0A" class="btn btn-secondary" style="margin-top: 8px; display: inline-block;">📧 Open Email Client</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Taher Sadabar. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Taher-1230">GitHub</a>
+                    <a href="http://linkedin.com/in/taher-sadabar-1012b7319">LinkedIn</a>
+                    <a href="instagram.com">Instagram</a>
+                    <a href="https://leetcode.com/u/Taher_Sadabar/">Leetcode</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

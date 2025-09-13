@@ -1,0 +1,52 @@
+{
+  "name": "dynamic-portfolio-website",
+  "version": "1.0.0",
+  "description": "A highly dynamic portfolio website with cool tech animations and theme toggle functionality",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --open=index.html --port=3000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o css/styles.min.css css/styles.css",
+    "minify-js": "terser js/script.js -o js/script.min.js --compress --mangle",
+    "serve": "http-server -p 8080 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint js/*.js",
+    "format": "prettier --write \"**/*.{html,css,js}\"",
+    "validate": "html-validator --file=index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "dynamic",
+    "animations",
+    "responsive",
+    "single-page",
+    "theme-toggle",
+    "modern"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "html-validator-cli": "^7.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio-website.git"
+  },
+  "homepage": "https://yourusername.github.io/portfolio-website/",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
